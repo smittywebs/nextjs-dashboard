@@ -1,6 +1,11 @@
 {
   "private": true,
- 
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start",
+    "seed": "node -r dotenv/config ./scripts/seed.js"
+  },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
     "@tailwindcss/forms": "^0.5.7",
@@ -31,11 +36,5 @@
   },
   "engines": {
     "node": ">=18.17.0"
-  },
-  "scripts": {
-    "build": "next build",
-    "dev": "next dev",
-    "start": "next start",
-    "seed": "node -r dotenv/config ./scripts/seed.js"
   }
 }
